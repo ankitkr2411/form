@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #7792c5; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #3f5390;
+}
+
+
+/* Styles for .main */
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/tejas.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding: 50px 10%;
+    background-color: #ecaf40;
+    position: relative;
+  }
+
+  .main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(137, 137, 137, 0.644);
+  }
+  
+  /* Styles for .innerMain */
+  .innerMain {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px -2px black;
+  }
+  
+  /* Styles for .imgBox */
+  .imgBox {
+    background-image: url('../images/train.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 170px;
+
+  }
+  
+  /* Styles for .trainName */
+  .trainName {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 1px 9px -6px black;
+  }
+  
+  /* Styles for h1 inside .trainName */
+  .trainName>h1 {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #3f5390;
+    color: white;
+  }
+  
+  /* Styles for .timeBox */
+  .timeBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+  
+  
+  /* Styles for .stationBox */
+  .stationBox {
+    /* Add your styles here */
+  }
+  
+  /* Styles for h1 inside .stationBox */
+  .stationBox>h1 {
+    font-size: 1em;
+    letter-spacing: 0.3px;
+  }
+
+  .stationBox>h1>span{
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 1.5px solid black;
+  }
+
+  .stationBox>span{
+    margin-left: 5px;
+    border-left: 1.5px solid black;
+    padding-left: 5px;
+  }
+
+  .stationBox>p{
+    text-align: center;
+    margin: 3px 0;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+  
+  /* Styles for .time */
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+  }
+
+  .time>span{
+    display: inline-block;
+    width: 15px;
+    height: 1.34px;
+    background-color: #909090;
+    margin: 0 6px;
+  }
+  
+  /* Styles for .coach */
+  .coach {
+    text-align: center;
+    background-color: #e7e7e7;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+  }
+
+  .coach>span{
+    border-left: 1.5px solid black;
+    padding-left: 4px;
+  }
+  
+  /* Styles for .formBox */
+  .formBox {
+    width: 100%;
+    height: calc(100% - 170px);
+    background-color: white;
+    padding-top: 100px;
+    display: flex;
+  }
+  
+
+/* Styles for .detailsBox */
+.detailsBox {
+  width: 60%;
+  padding: 0 50px;
+  border-right: 2px solid #00000042;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Styles for .infoBox */
+.infoBox {
+  margin-bottom: 40px;
+}
+
+/* Styles for .infoHead */
+.infoHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+  border-bottom: 1px solid #b1b1b1;
+  padding: 5px;
+}
+
+/* Styles for h1 inside .infoHead */
+.infoHead h1 {
+  /* Add your styles here */
+}
+
+/* Styles for h3 inside .infoHead */
+.infoHead h3 {
+  /* Add your styles here */
+}
+
+/* Styles for .passDetailBox */
+.passDetailBox {
+  margin: 20px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Styles for .passBorder */
+.passBorder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #3f5390;
+  padding: 5px;
+  height: 31px;
+  font-size: 0.9em;
+}
+
+/* Styles for h3 inside .passBorder */
+.passBorder h3 {
+  /* Add your styles here */
+}
+
+
+.add{
+  background-color: #3f5390;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+.add:hover{
+  cursor: pointer;
+  background-color: #283764;
+}
+
+.add:active{
+  transform: scale(0.8);
+}
+
+/* Styles for h5 inside .passBorder */
+.passBorder h5 {
+  /* Add your styles here */
+}
+
+.delete{
+  background-color: #ff2424;
+    border-radius: 4px;
+    padding: 1px 5px;
+}
+
+.delete:hover{
+  cursor: pointer;
+  background-color: #9a1616;
+}
+
+.delete:active{
+  background-color: #ff2424;
+}
+
+/* Styles for .passDetail */
+.passDetail {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+label{
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+input, select{
+  padding: 5px 10px;
+  border: 1px solid #3f5390;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Styles for .name */
+.name {
+  /* Add your styles here */
+}
+
+/* Styles for .age */
+.age {
+  /* Add your styles here */
+}
+
+/* Styles for #gender */
+#gender {
+  /* Add your styles here */
+}
+
+.contactBox>p{
+  font-size: 0.8em;
+  margin: 20px 10px;
+  font-weight: bold;
+}
+
+.prefDetail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.reservation{
+  margin-left: 10px;
+}
+
+/* Styles for .priceBox */
+.priceBox {
+  padding-left: 30px;
+  padding-right: 50px;
+  width: 40%;
+}
+
+/* Styles for h1 inside .priceBox */
+.priceBox h1 {
+  margin-bottom: 10px;
+  font-size: 1.7em;
+  margin-top: 3px;
+}
+
+.priceDetail{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #3f5390;
+  padding: 10px 5px;
+  margin: 10px 0;
+}
+
+
+.pay{
+  margin-left: auto;
+  width: fit-content;
+  background-color: #3f5390;
+  color: white;
+  padding: 5px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.pay:hover{
+  cursor: pointer;
+  background-color: #1a2956;
+}
+
+.pay:active{
+  transform: scale(0.8);
+}
+
+  

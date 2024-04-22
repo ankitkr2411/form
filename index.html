@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="innerMain">
+        <div class="imgBox">
+          <div class="trainName">
+            <h1>DDN SHTBDI EXP (12018)</h1>
+            <div class="timeBox">
+              <div class="stationBox">
+                <h1>16:55<span>DEHRADUN</span></h1>
+                <p>THU, 25 Apr</p>
+              </div>
+              <div class="time">
+                <span></span>
+                05:55
+                <span></span>
+              </div>
+              <div class="stationBox">
+                <h1>22:50<span>NEW DELHI</span></h1>
+                <p>THU, 25 Apr</p>
+              </div>
+            </div>
+            <div class="coach">AC Chair car (CC) <span>General</span></div>
+          </div>
+        </div>
+
+        <div class="formBox">
+          <div class="detailsBox">
+
+            <div class="infoBox passengerBox" id="passengerBox">
+              <div class="infoHead">
+                <h1>Add Passenger</h1>
+                <h3 class="add" onclick="addPass()">Add</h3>
+              </div>
+
+              <div class="passDetailBox" id="passenger1">
+                <div class="passBorder">
+                  <h3>Passenger Details</h3>
+                  <h5 class="delete" onclick="delPass('passenger1')" >Delete</h5>
+                </div>
+
+                <div class="passDetail">
+                  <input
+                    type="text"
+                    class="name"
+                    id="name1"
+                    placeholder="Passenger Name"
+                  />
+                  <input type="text" class="age" id="age1" placeholder="Age" />
+                  <select name="gender" id="gender">
+                    <option value="select">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value=female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="passBorder"></div>
+              </div>
+
+            </div>
+
+            <div class="infoBox contactBox">
+              <div class="infoHead">
+                <h1>Contact Details</h1>
+              </div>
+              <p>
+                (Ticket details will be sent to email- ak******@gmail.com and
+                registered mobile number 70******10)
+              </p>
+              <label for="phone">Phone:</label>
+              <input type="tel" placeholder="Enter Phone Number" />
+            </div>
+
+            <div class="infoBox otherPref">
+              <div class="infoHead">
+                <h1>Other Preferences</h1>
+              </div>
+
+              <div class="prefDetail">
+                <div><input type="checkbox" id="autoUpgrade"/> <label for="autoUpgrade">Consider for Auto Upgradation.</label></div>
+                <div><input type="checkbox" id="autoUpgrade"/> <label for="autoUpgrade">Book Only if confirm berths are alloted.</label></div>
+              </div>
+              <select class="reservation" name="reservation" id="reservation">
+                <option value="volvo">Reservation Choice</option>
+                <option value="volvo">Book, only if at least 1 lower berth is allotted.</option>
+                <option value="saab">Book, only if at least 2 lower berth is allotted.</option>
+                <option value="mercedes">Book, only if all berths are alloted in same coach.</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="priceBox">
+            <h1>Fare Summary</h1>
+            <div class="priceDetail fare">
+                <p>Ticket Fare</p>
+                <h4 id="fare">&#8377;535.00</h4>
+            </div>
+            <div class="priceDetail tax">
+                <p>Convenience Fee (Incl. of GST)</p>
+                <h4 id="tax">&#8377;35.40</h4>
+            </div>
+
+            <div class="totalDiv">
+                <h4>Total Fare</h4>
+                <h4 id="total">&#8377;570.40</h4>
+            </div>
+
+            <div class="pay">Pay Now</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
